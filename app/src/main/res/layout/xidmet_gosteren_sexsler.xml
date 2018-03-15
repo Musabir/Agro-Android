@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_single"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        card_view:cardCornerRadius="6dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/test"
+            android:src="@drawable/ic_pers"
+            android:id="@+id/img34"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignBottom="@+id/addresss"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img34"
+            android:gravity="fill_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Ad soyad"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/service_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt"
+            android:layout_toEndOf="@+id/img34"
+            android:layout_toRightOf="@+id/img34"
+            android:hint="Service Name"
+            android:paddingLeft="20dp"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/addresss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/service_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:text="Address"
+            android:textSize="12dp"
+            android:layout_marginRight="14dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

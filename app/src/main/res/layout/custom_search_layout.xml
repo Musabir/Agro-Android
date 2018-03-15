@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+
+        android:id="@+id/search_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_width="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blury"
+        android:layout_height="120dp" />
+    <TextView
+        android:id="@+id/toxum_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Bugda"
+        android:textColor="@color/font_color"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/search_icon"/>
+
+    <TextView
+        android:id="@+id/toxum_sort"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toxum_name"
+        android:layout_alignStart="@+id/toxum_name"
+        android:layout_below="@+id/toxum_name"
+        android:text="Qizilgul"
+        android:textColor="@color/font_color"
+        android:textSize="18sp" />
+
+    <TextView
+
+        android:id="@+id/toxum_region"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toxum_sort"
+        android:layout_alignStart="@+id/toxum_sort"
+        android:layout_below="@+id/toxum_sort"
+        android:text="Bugda"
+        android:textColor="@color/font_color"
+        android:textSize="18sp" />
+
+
+
+
+
+</RelativeLayout>
+

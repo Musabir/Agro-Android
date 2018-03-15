@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+            <ListView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listview_view_list">
+
+            </ListView>
+    <ListView
+
+        android:visibility="gone"
+        android:id="@+id/search_layout_list"
+        android:layout_width="match_parent"
+        android:dividerHeight="2dp"
+        android:divider="@color/colorPrimary"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/oops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/no_result_found"
+            android:layout_marginTop="4dp"
+            android:text="Oops!\n No Result"
+           />
+
+        <ImageView
+            android:id="@+id/no_result_found"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_ooops"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

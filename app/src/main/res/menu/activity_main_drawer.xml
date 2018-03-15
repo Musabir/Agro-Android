@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hesabla"
+            android:title="Aqrotexniki Xidmətlər"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/toxumlar"
+            android:title="Toxumlar"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/xidmet_gosteren_sexsler"
+            android:title="Xidmət göstərən şəxslər"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/mayalanma"
+            android:title="Süni mayalanma"
+            android:checkable="false"/>
+
+            <item
+                android:id="@+id/xidmet_teklif_Et"
+                android:title="Xidmət təklif et"
+                android:checkable="false"/>
+            <item
+                android:id="@+id/toxum_teklif_et"
+                android:title="Toxum təklif et"
+                android:checkable="false"/>
+        <item
+            android:id="@+id/haqqimizda"
+            android:title="Haqqımızda"
+            android:checkable="false"/>
+    </group>
+
+</menu>
